@@ -7,6 +7,9 @@
       <input v-model="password" type="password" placeholder="Password" required /><br></br><br></br>
       <button type="submit">Login</button>
     </form>
+    <br></br>
+    <br></br>
+    <router-link to="/register">Don't have an account?<br>Register</router-link>
     <p style="color:red">{{ error }}</p>
   </div>
 </div>

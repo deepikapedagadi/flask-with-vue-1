@@ -1,22 +1,3 @@
-<!--<template>
-  <div>
-    <h2>Page 2</h2>
-    <p>This is content for Page 2.</p>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "Page2",
-};
-</script>
-
-<style scoped>
-p {
-  font-size: 16px;
-}
-</style> -->
-
 <template>
   <div class="page-container">
     <h2>📺 Series</h2>

@@ -3,6 +3,7 @@
     <div class="register-box">
       <h1>Register</h1>
       <form @submit.prevent="register">
+        <input v-model="name" type="name" placeholder="full name" required/>
         <input v-model="email" type="email" placeholder="Email" required />
         <input v-model="password" type="password" placeholder="Password" required />
         <button type="submit">Register</button>
@@ -21,6 +22,7 @@ export default {
   data() {
     return {
       email: "",
+      name: "",
       password: "",
       success: "",
       error: "",
@@ -32,6 +34,7 @@ export default {
         const res = await API.post("/register", {
           email: this.email,
           password: this.password,
+          name: this.name,
         });
         this.success = res.data.message;
         this.error = "";
